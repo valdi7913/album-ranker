@@ -1,0 +1,36 @@
+:root {
+	--spacing: 16px;
+	--spacing-small: 8px;
+}
+
+* {
+	font-family: Poppins;
+	line-height: 32px;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	font-size: 24px;
+	width: 100%;
+}
+
+#results> :nth-of-type(odd) {
+	background: #f8f8f8;
+}
+
+
+tr:hover {
+	transform: scale(1.1)
+}

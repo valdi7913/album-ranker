@@ -1,0 +1,31 @@
+{
+  "name": "album-ranking-site",
+  "version": "1.0.0",
+  "description": "A website to rank albums with login and Spotify API integration",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "backend": "cd ../backend && cargo watch -x run"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  },
+  "snowpack": {
+    "mount": {
+      "src": "/dist",
+      "public": "/"
+    },
+    "plugins": [],
+    "devOptions": {
+      "port": 8080,
+      "open": "default",
+      "proxy": {
+        "/api": "http://localhost:8000"
+      },
+      "hmr": true
+    }
+  }
+}
