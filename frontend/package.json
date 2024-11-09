@@ -11,7 +11,7 @@
     "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "snowpack": "^3.8.8"
+    "snowpack": "^3.2.2"
   },
   "snowpack": {
     "mount": {
